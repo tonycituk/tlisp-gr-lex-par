@@ -1,0 +1,5 @@
+#! /usr/bin/bash
+
+# Removes old & vscode antlr4 ext files
+rm -rf ./.antlr
+rm -rf ./srcParserLexer
