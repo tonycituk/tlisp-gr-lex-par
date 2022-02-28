@@ -1,5 +1,5 @@
 ## Tiny lisp lexer, parser & evaluator
 
-[Syntax Diagram](./output/index.html)
+[Syntax Diagram](https://tonycituk.github.io/tlisp-gr-lex-par/)
 
-[Demo](./docs/clip.mp4)
+[Demo](https://tonycituk.github.io/tlisp-gr-lex-par/clip.mp4)
