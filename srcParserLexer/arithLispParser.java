@@ -182,6 +182,9 @@ public class arithLispParser extends Parser {
 			_errHandler.reportError(this, re);
 			_errHandler.recover(this, re);
 		}
+		catch (Exception e){
+
+		}
 		finally {
 			exitRule();
 		}
@@ -209,7 +212,7 @@ public class arithLispParser extends Parser {
 		}
 	}
 
-	public final ExprSContext exprS() throws RecognitionException {
+	public final ExprSContext exprS() throws Exception, RecognitionException {
 		ExprSContext _localctx = new ExprSContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_exprS);
 		try {
@@ -240,6 +243,8 @@ public class arithLispParser extends Parser {
 			_localctx.exception = re;
 			_errHandler.reportError(this, re);
 			_errHandler.recover(this, re);
+			System.out.println();
+			throw new Exception();
 		}
 		finally {
 			exitRule();
@@ -316,6 +321,8 @@ public class arithLispParser extends Parser {
 			_localctx.exception = re;
 			_errHandler.reportError(this, re);
 			_errHandler.recover(this, re);
+		} catch (Exception e){
+			
 		}
 		finally {
 			exitRule();
