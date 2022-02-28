@@ -12,11 +12,11 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.println("Tiny lisp 2022. Authors: De la cruz G., Castul G., Cituk M.");
         System.out.println("Made in java with <3, coffee & pizza.");
-        System.out.println("Insert your tlisp expression or 'exit()' to close the tlisp prompt.");
+        System.out.println("Insert your tlisp expression or '(exit)' to close the tlisp prompt.");
 
         System.out.print("(tlisp) > ");
         String iString = sc.nextLine();
-        while (!iString.equals("exit()")) {
+        while (!iString.equals("(exit)")) {
             lispLexerParserEvaluator(iString);
             System.out.print("(tlisp) > ");
             iString = sc.nextLine();
